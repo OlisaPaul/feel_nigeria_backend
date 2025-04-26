@@ -12,6 +12,7 @@ python-dotenv = "*"
 drf-nested-routers = "*"
 dj-database-url = "*"
 psycopg2 = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
