@@ -7,7 +7,7 @@ from .models import Customer
 
 User = get_user_model()
 
-customer_fields = ['phone_number', 'nationality', 'travel_date','preferred_destination']
+customer_fields = ['id','phone_number', 'nationality', 'travel_date','preferred_destination']
 
 
 class CreateCustomerSerializer(serializers.ModelSerializer):
@@ -66,7 +66,6 @@ class CreateCustomerSerializer(serializers.ModelSerializer):
 
 class UpdateCustomerSerializer(serializers.ModelSerializer):
     name = serializers.CharField(write_only=True)
-    is_active = serializers.BooleanField(write_only=True)
 
     class Meta:
         model = Customer

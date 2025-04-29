@@ -13,6 +13,7 @@ drf-nested-routers = "*"
 dj-database-url = "*"
 psycopg2 = "*"
 django-cors-headers = "*"
+django-username-email = "*"
 
 [dev-packages]
 

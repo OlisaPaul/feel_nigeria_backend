@@ -81,6 +81,32 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'feel_nigeria_backend.wsgi.application'
 
+DJOSER = {
+    "SERIALIZERS": {
+        "user_create": 'core.serializers.UserCreateSerializer',
+        "current_user": 'core.serializers.UpdateCurrentUserSerializer',
+        "user": 'core.serializers.UserSerializer',
+        'token_create': 'core.serializers.CustomTokenCreateSerializer',
+        'user_delete': 'core.serializers.CustomUserDeleteSerializer',
+        'password_reset': 'core.serializers.CustomSendEmailResetSerializer',
+    },
+    'EMAIL': {
+        'password_reset': 'core.email.CustomPasswordResetEmail',
+    },
+    'PERMISSIONS': {
+        "user_create": ['rest_framework.permissions.IsAdminUser'],
+    },
+    'DOMAIN': 'wallsprint.netlify.app',
+    'SITE_NAME': 'Wallsprint',
+    'PASSWORD_RESET_CONFIRM_URL': 'reset-password/{uid}/{token}',
+    'PASSWORD_RESET_SHOW_EMAIL_NOT_FOUND': True,
+    'PASSWORD_CHANGED_EMAIL_CONFIRMATION': True,
+    # 'SEND_ACTIVATION_EMAIL': True,
+    # 'ACTIVATION_URL': 'reset-password/{uid}/{token}',
+    # 'SEND_CONFIRMATION_EMAIL': True,
+    'LOGIN_FIELD': 'email',
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
