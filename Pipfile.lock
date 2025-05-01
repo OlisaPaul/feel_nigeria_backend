@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cb549014a36552c5008cb1767e68f2f0e39d03bb0fe4fc5bca738a47879105c5"
+            "sha256": "ae42546caff0beb61dbfce6b73f56316e80bbd7b1dba3393f04b1302afd535a1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -480,16 +480,17 @@
                 "sha256:d1f4286d5ca1e512c9b2f686e7ecb2a0128148f1a33d853b69dc07b58508362e",
                 "sha256:db70b972faeb10ee1ec83d0dc7dbd0558d5f5830417bba317b712b10ff58d031"
             ],
+            "index": "pypi",
             "markers": "python_version >= '3.9'",
             "version": "==5.4.3"
         },
         "social-auth-core": {
             "hashes": [
-                "sha256:6d940c458c529d3689f2ceca2d944911a4b02d76e82d154688d1d3f75f12d168",
-                "sha256:ecf9ae1e2e5bb52741cedcaede943fe89a8ada23f9aad018f350d4839a9d3a90"
+                "sha256:1019fe2f7fe30f9ff7d15c04a32c15324ecdbd59f62fbe829031dab74071a21a",
+                "sha256:563510844ccc043a727b120fe57726860c93158d4304fafa2c1e122f2deb4fd3"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==4.6.0"
+            "version": "==4.6.1"
         },
         "sqlparse": {
             "hashes": [
