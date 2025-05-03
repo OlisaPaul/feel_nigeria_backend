@@ -25,4 +25,5 @@ urlpatterns = [
     path(f'{base_path}/auth/', include('djoser.urls.jwt')),
     path(f'{base_path}/auth/', include('social_django.urls', namespace='social')),
     path(f'{base_path}/store/', include('store.urls')),
+    path('sabre/', include('sabre_integration.urls')),
 ]
