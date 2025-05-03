@@ -14,8 +14,9 @@ dj-database-url = "*"
 psycopg2 = "*"
 django-cors-headers = "*"
 django-username-email = "*"
+scabbard = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.12"
+python_version = "3.13"
