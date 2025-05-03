@@ -15,7 +15,8 @@ psycopg2 = "*"
 django-cors-headers = "*"
 django-username-email = "*"
 scabbard = "*"
-
+social-auth-app-django = "*"
+django-allauth = "*"
 [dev-packages]
 
 [requires]
